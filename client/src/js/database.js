@@ -1,6 +1,6 @@
 import { openDB } from 'idb';
 
-const initdb = async () =>
+export const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
       if (db.objectStoreNames.contains('jate')) {
