@@ -32,4 +32,4 @@ export const getDb = async () => {
   console.log('all stored db data:', result);
 };
 
-initdb();
+await initdb();
